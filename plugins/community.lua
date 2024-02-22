@@ -1,9 +1,32 @@
 return {
-  -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  -- example of importing a plugin, comment out to use it or add your own
-  -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
-
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
+  { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    "catppuccin",
+    opts = {
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
+      background = { -- :h background
+        light = "latte",
+        dark = "mocchiato",
+      },
+      integrations = {
+        sandwich = false,
+        noice = true,
+        mini = true,
+        leap = true,
+        markdown = true,
+        neotest = true,
+        cmp = true,
+        overseer = true,
+        lsp_trouble = true,
+        rainbow_delimiters = true,
+      },
+    },
+  },
 }

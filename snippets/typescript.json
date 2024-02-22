@@ -1,0 +1,41 @@
+{
+  "setup": {
+    "prefix": [
+      "sn_navbar"
+    ],
+    "body": [
+      "import { classNames } from 'shared/lib/classNames';",
+      "import cls from './${TM_FILENAME_BASE}.module.scss';",
+      "",
+      "interface ${TM_FILENAME_BASE}$Props {",
+      "  className?: string;",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE} = ({ className }:${TM_FILENAME_BASE}$Props) => {",
+      "  return (",
+      "    <div className={classNames(cls.${TM_FILENAME_BASE}, {}, [className])}>",
+      "",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "react TS snippet navbar"
+  },
+  "setup_0": {
+    "prefix": [
+      "sn_rct"
+    ],
+    "body": [
+      "const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <div>",
+      "      ",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "empty component"
+  }
+}
